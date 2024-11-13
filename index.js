@@ -30,7 +30,7 @@ function createShortUrl() {
   localStorage.setItem('urlDatabase', JSON.stringify(urlDatabase))
 
   // Mostrar resultado
-  const shortUrl = `neider.dev/${customAlias}`
+  const shortUrl = `https://shortener-neider.netlify.app/${customAlias}`
   showResult(
     `
         <p>¡URL acortada creada con éxito!</p>
@@ -95,7 +95,7 @@ function updateUrlList() {
   urls.forEach(([alias, data]) => {
     html += `
             <div class="url-item">
-                <p><strong>URL Corta:</strong> neider.dev/${alias}</p>
+                <p><strong>URL Corta:</strong> https://shortener-neider.netlify.app/${alias}</p>
                 <p><strong>URL Original:</strong> ${data.longUrl}</p>
                 <p><strong>Creada:</strong> ${new Date(
                   data.createdAt
