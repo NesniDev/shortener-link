@@ -1,4 +1,4 @@
-// Almacenamiento local para las URLs
+// Almacenamiento local para las URLs guardadas
 let urlDatabase = JSON.parse(localStorage.getItem('urlDatabase')) || {}
 
 function createShortUrl() {
