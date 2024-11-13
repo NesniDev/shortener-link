@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acortador de Link</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Acortador de URLs Personalizado</h2>
+        <div class="input-group">
+            <label for="longUrl">URL Original</label>
+            <input type="url" id="longUrl" placeholder="https://ejemplo.com/tu-url-larga" required>
+            
+            <label>URL Personalizada</label>
+            <div class="custom-url-container">
+                <span class="domain">midominio.com/</span>
+                <input type="text" id="customAlias" class="custom-alias" placeholder="tu-alias-personalizado" required>
+            </div>
+            
+            <button onclick="createShortUrl()">Crear URL Corta</button>
+        </div>
+        
+        <div id="result"></div>
+        
+        <div id="urlList" class="url-list">
+            <h3>URLs Guardadas</h3>
+        </div>
+    </div>
+</body>
+</html>
